@@ -1,0 +1,164 @@
+.loadingShowDetails{
+    text-align: center;
+    margin:40vh;
+}
+
+.ShowHeaderContainer{
+    min-height: 20vh;
+}
+
+.ShowHeader1{
+    min-height: 60%;
+    border: 1px solid gray;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.7rem;
+}
+.ShowMovieName{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    
+}
+.ShowTheaterDetail{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(89, 89, 89);
+    padding-left: 1.5rem;
+}
+.showAvailableSeats{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 30px;
+    width:150px;
+    margin-left: 4rem;
+    border: 1px solid rgb(83, 0, 0);
+}
+.details{
+    width: 80%;
+}
+
+.ShowHeader2{
+    background-color: aliceblue;
+    height: 40%;
+    padding:0.7rem;
+    box-shadow: 0px 0.2px 5px 5px rgb(232, 232, 232);
+    
+}
+
+.showtimeSec{
+    height:1.5rem;
+    width:5rem;
+    background-color:green;
+    box-shadow: 0.5px 0.1px 2px 2px rgb(228, 228, 228);
+    border-radius: 5px;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:700;
+    color: white;
+}
+
+.seat-btn {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  width: 28px;   /* smaller width */
+  height: 25px;  /* smaller height */
+  font-size: 8px; /* smaller text */
+  margin: 3px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.55s ease-in-out;
+
+}
+.seat-btn.booked {
+  background-color: #ddd;
+  color: #999;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+.seat-btn.selected {
+  border-color: #02a802;
+  background-color: #02a802;
+  color: #fff;
+}
+.seat-btn:hover:not(.booked):not(.selected) {
+  scale: 110%;
+  border:1px solid rgb(115, 115, 115);
+}
+
+.seatSection{
+
+    display: flex;
+    gap:3px;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+.SelectedSeatsAndBooked{
+    position: fixed;
+  background: linear-gradient(to right, rgb(240, 182, 96), rgb(255, 255, 255),  rgb(240, 182, 96));
+    padding: 10px;
+    width: 100%;
+    bottom:0;
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    max-height: 60px;
+}
+
+.SelectedSeatsAndBooked .h3 {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.SelectedSeatsAndBooked .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d81b60;
+}
+
+.SelectedSeatsAndBooked .payButton {
+  background: linear-gradient(135deg, #ff4081, #f50057);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.SelectedSeatsAndBooked .payButton:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 5px 15px rgba(12, 12, 12, 0.4);
+}
+
+.theater-screen {
+  width: 30%;
+  height: 15px;
+  background: linear-gradient(to right, rgb(85, 205, 224), rgb(255, 255, 255),  rgb(85, 205, 224));
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #333;
+  margin: 15px auto;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+

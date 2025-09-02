@@ -1,0 +1,42 @@
+.MovieCard {
+    height: 270px;
+    width: 180px;
+    background-color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.MovieCard:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.MovieListSection {
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.moviePoster {
+    width: 180px;
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movieName {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
