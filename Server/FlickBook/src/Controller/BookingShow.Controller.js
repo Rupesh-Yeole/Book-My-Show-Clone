@@ -1,8 +1,8 @@
 require('dotenv').config()
 
 const { BookingConfirmedTemplate } = require("../EmailTemplates/BookingConfirmedTemplate.js");
-const BookingModel = require("../Models/BookingShow.model");
-const ShowModel = require("../Models/Show.model");
+const BookingModel = require("../Models/BookingShow.model.js");
+const ShowModel = require("../Models/Show.model.js");
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const { sendEmail } = require("../Utils/MailerUtils.js");
 
