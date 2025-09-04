@@ -104,9 +104,11 @@ function MovieDetailsPage(){
             shows === null && <div className='loaderShows'><h2>Fetching Shows...</h2></div>
         }
         <div className='TheaterAndShowSection'>
-            <div className='TandS1'>
-                <h3 style={{backgroundColor:' rgb(255, 101, 101)', height:'1.5rem', width:'20rem', display:'flex', justifyContent:'center', alignItems:'center' , marginBottom:'2.5rem', borderRadius:'3px', fontWeight:'700'}}> Theaters & Shows </h3>
-            </div>
+            {
+                shows && <div className='TandS1'>
+                    <h3 style={{backgroundColor:' rgb(255, 101, 101)', height:'1.5rem', width:'20rem', display:'flex', justifyContent:'center', alignItems:'center' , marginBottom:'2.5rem', borderRadius:'3px', fontWeight:'700'}}> Theaters & Shows </h3>
+                </div>
+            }
             {
                 shows && Object.keys(shows).length === 0 && <div><h2 className='noShows'>🎬 Oops! No shows for this movie on {date}. Try a different date or movie.</h2> </div>
             }

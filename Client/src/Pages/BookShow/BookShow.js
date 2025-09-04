@@ -161,7 +161,7 @@ function BookShow(){
                 showDetails && getSeats()
             }   
         </div>
-        <div className="theater-screen">SCREEN THIS WAY</div>
+        {showDetails && <div className="theater-screen">SCREEN THIS WAY</div>}
         {
                 showDetails && <div className='SelectedSeatsAndBooked'>
                     <div >Selected Seats: <span >{selectedSeats.join(", ")}</span></div>
