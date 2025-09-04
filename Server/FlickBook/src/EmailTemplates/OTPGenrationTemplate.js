@@ -19,7 +19,7 @@ const OTPGenerationTemplate = (userDetails, otp) =>{
                 <p>If you did not request a password reset, please ignore this email.</p>     
 
                 <p>Thank you,<br/>
-                BookMyShow_Clone</p>
+                FlickBook.com</p>
             </body>
         </html>
     ` 

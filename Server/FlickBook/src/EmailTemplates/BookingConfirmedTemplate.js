@@ -22,10 +22,10 @@ const BookingConfirmedTemplate = (userDetails, showDetails, bookingDetails,seats
 
                 <p>Please keep this confirmation email for your records. You may need the booking ID when checking in or contacting support.<br/> If you have any questions, feel free to reach out to our support team.</p>
 
-                <p>Thank you for booking with <b>BookMyShow_Clone</b>. We look forward to serving you!</p>
+                <p>Thank you for booking with <b>FlickBook.com</b>. We look forward to serving you!</p>
 
                 <p>Thank you,<br/>
-                BookMyShow_Clone Team</p>
+                FlickBook.com Team</p>
             </body>
         </html>
     ` 
