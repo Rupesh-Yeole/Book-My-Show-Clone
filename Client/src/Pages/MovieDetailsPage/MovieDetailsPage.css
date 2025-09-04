@@ -173,3 +173,127 @@
 .loaderShows{
   text-align: center;
 }
+
+
+/* Existing CSS for larger screens will remain */
+
+/* --- Mobile Styles --- */
+/* Add this section at the bottom of your CSS file */
+
+@media screen and (max-width: 800px) {
+
+    /* --- General Layout Changes --- */
+    .MovieDetailsSection {
+        flex-direction: column; /* Stack movie details vertically */
+        align-items: center; /* Center content horizontally */
+        gap: 0; /* Reduce spacing */
+    }
+
+    /* --- Movie Poster & Release Date --- */
+    .container1 {
+        width: 100%; /* Take up full width */
+        padding: 1rem; /* Adjust padding for mobile */
+        height: auto;
+    }
+
+    .MoviePoster {
+        width: 85%; /* Make the poster bigger */
+        height: auto;
+    }
+
+    .ReleaseDate {
+        width: 85%; /* Match the poster's width */
+        font-size: 0.8rem;
+    }
+
+    /* --- Movie Details Section --- */
+    .movie-banner {
+        width: 100%; /* Take up full width */
+        background-image: none !important; /* Remove background image on mobile for better performance and readability */
+        box-shadow: none !important;
+        padding: 1rem;
+    }
+
+    .container2 {
+        width: 100%; /* Take up full width */
+        padding: 1rem; /* Adjust padding */
+        min-height: auto;
+    }
+
+    .MovieName {
+        font-size: x-large; /* Adjust font size */
+        text-align: center;
+    }
+
+    .MovieDescription {
+        font-size: small;
+        padding: 0.8rem;
+    }
+
+    .MovieMeta {
+        width: 100%; /* Full width for better readability */
+        padding: 0.5rem;
+        margin-top: 15px; /* Adjust spacing */
+        text-align: center;
+    }
+
+    .MovieGenre {
+        width: 100%; /* Full width for better readability */
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* --- Booking Date Input --- */
+    .BookingDate {
+        width: 100%; /* Make input full width */
+        margin-top: 20px;
+    }
+
+    .DateSectionLabel {
+        font-size: 0.9rem;
+    }
+
+    .DateSection {
+        font-size: 1rem;
+    }
+
+    /* --- Theaters & Shows Section --- */
+    .TheaterAndShowSection {
+        width: 95%; /* Adjust width and center */
+        margin-left: 2.5%;
+        padding: 0.5rem;
+    }
+    
+    .TandS1 h3{
+        font-size: 1rem;
+        width: 15rem; /* Adjust the width of the header */
+        height: 1.2rem;
+    }
+
+    .noShows {
+        font-size: medium;
+    }
+
+    .Theaters {
+        padding: 5px;
+    }
+
+    .TheaterColumn {
+        width: 100%;
+    }
+
+    .showColumn {
+        width: 100%;
+        margin-top: 1rem; /* Add some space between theater and shows */
+    }
+
+    .show-ul {
+        justify-content: center; /* Center show times */
+        gap: 0.4rem;
+    }
+
+    .show-ul li {
+        padding: 0.6rem 0.8rem; /* Adjust padding for smaller buttons */
+        font-size: 10px;
+    }
+}
