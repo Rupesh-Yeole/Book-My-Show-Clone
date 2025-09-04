@@ -27,8 +27,6 @@
 }
 
 .inline-logo {
-  height: 35px; /* Adjust this to match the text size */
-  width: 130px;
-  object-fit: contain;
-  margin-top: 2px; /* Tweak for perfect baseline match */
+  height: 37px; /* Adjust this to match the text size */
+  width: 110px; /* Tweak for perfect baseline match */
 }

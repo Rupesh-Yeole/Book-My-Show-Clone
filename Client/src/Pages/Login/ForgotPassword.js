@@ -1,7 +1,7 @@
 import { UserOutlined } from '@ant-design/icons';
 import { Button, Form, Input, Flex, message} from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import logoBookMyShow from "../../Assets/Bookmyshow-logoid.png";
+import FlickBook from "../../Assets/FlickBook.png";
 import './Login.css'
 import { forgotPasswordAPI } from '../../Api/Authentication';
 import BeforeLogInNavbar from '../../Component/BeforeLogInNavbar/BeforeLoggedInNavbar.js';
@@ -28,7 +28,7 @@ function ForgotPassword(){
             <main>
                 <section className='sectionHeading'>
                     <h2 className="login-heading">Enter your
-                        <span className="logo-text"><img className="inline-logo" src={logoBookMyShow} alt="BookMyShow Logo" /> Email</span>
+                        <span className="logo-text"><img className="inline-logo" src={FlickBook} alt="FlickBook Logo" /> Email</span>
                     </h2>
                 </section>
                 <section>

@@ -2,7 +2,7 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, Flex, message } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css'
-import logoBookMyShow from "../../Assets/Bookmyshow-logoid.png";
+import FlickBook from "../../Assets/FlickBook.png";
 import { login } from '../../Api/Authentication.js';
 import BeforeLogInNavbar from '../../Component/BeforeLogInNavbar/BeforeLoggedInNavbar.js';
 import { useEffect } from 'react';
@@ -44,8 +44,7 @@ function Login(){
         <div className='Login'>
             <main>
                 <section className='sectionHeading'>
-                    <h2 className="login-heading">Login In
-                        <span className="logo-text"><img className="inline-logo" src={logoBookMyShow} alt="BookMyShow Logo" /></span>
+                    <h2 className="login-heading">Login In<span className="logo-text"><img className="inline-logo" src={FlickBook} alt="FlickBook Logo" /></span>
                     </h2>
                 </section>
                 <section >

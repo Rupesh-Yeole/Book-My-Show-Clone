@@ -4,8 +4,16 @@ import './MovieCard.css';
 import '../../Pages/Home/Home.css';
 import {Link} from 'react-router-dom';
 import moment from "moment";
+import { Spin } from 'antd';
 
 function MovieList({searchValue}){
+
+    const contentStyle = {
+        padding: 50,
+        background: 'rgba(255, 255, 255, 0.05)',
+        borderRadius: 4,
+    };
+    const content = <div style={contentStyle} />;
 
     const [movies, setMovies] = useState(null);
     const allMoviesRef = useRef(null);
@@ -36,7 +44,9 @@ function MovieList({searchValue}){
 
     return <div className="MovieListSection">
         {
-            movies == null &&<div> <h2> fetching movie details... </h2></div>
+            movies == null &&<div> 
+                <Spin tip="Loading" size="large">{content}</Spin>
+            </div>
         }
 
         {

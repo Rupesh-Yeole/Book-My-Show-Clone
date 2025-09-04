@@ -1,4 +1,4 @@
-import logoBookMyShow from "../../Assets/Bookmyshow-logoid.png"
+import FlickBook from "../../Assets/FlickBook.png"
 import './NavbarAfter.css';
 import {Link, useNavigate} from "react-router-dom";
 
@@ -17,7 +17,7 @@ function Navbar({searchValue, setSearchValue}){
     return <div className="navbar">
             <div className="navbar-left">
                 <Link to="/homeMovies">
-                <img className="logo" src={logoBookMyShow} alt="BookMyShow Logo" />
+                <img className="logo" src={FlickBook} alt="FlickBook Logo" />
                 </Link>
             </div>
             

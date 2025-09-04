@@ -1,13 +1,13 @@
 
-import logoBookMyShow from "../../Assets/Bookmyshow-logoid.png"
-import './Navbar.css';
+import FlickBook from "../../Assets/FlickBook.png"
+import './NavbarBefore.css';
 import {Link} from "react-router-dom";
 
 function Navbar(){
 
     return <div className="navbar">
             <div className="navbar-left">
-                <img className="logo" src={logoBookMyShow} alt="BookMyShow Logo" />
+                <img className="logo" src={FlickBook} alt="FLickBook Logo" />
             </div>
             
             <div className="navbar-right">

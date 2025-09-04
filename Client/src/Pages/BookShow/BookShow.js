@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import './BookShow.css'
 import { getShowDetails } from '../../Api/Shows';
 import { createBooking, makePayment } from '../../Api/Booking';
-import {message} from 'antd';
+import {message, Spin} from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 import StripeCheckout from 'react-stripe-checkout';
 
 
@@ -127,7 +128,7 @@ function BookShow(){
 
     return <div>
         {
-            showDetails === null && <div className='loadingShowDetails'><h2>Fetching show view...</h2></div>
+            showDetails === null && <div className='loadingShowDetails'><Spin indicator={<LoadingOutlined style={{ fontSize: 48 }} spin />} /></div>
         }
 
         {

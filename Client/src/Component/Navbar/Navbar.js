@@ -1,5 +1,5 @@
 
-import logoBookMyShow from "../../Assets/Bookmyshow-logoid.png"
+import FlickBook from "../../Assets/FlickBook.png"
 import './Navbar.css';
 import {Link, useNavigate} from "react-router-dom";
 
@@ -12,7 +12,7 @@ function Navbar(){
 
     return <div className="navbar">
             <div className="navbar-left">
-                <img className="logo" src={logoBookMyShow} alt="BookMyShow Logo" />
+                <img className="logo" src={FlickBook} alt="FlickBook Logo" />
             </div>
             
             

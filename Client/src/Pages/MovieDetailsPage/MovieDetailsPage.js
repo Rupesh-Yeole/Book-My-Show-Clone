@@ -3,12 +3,20 @@ import { useState, useEffect } from 'react';
 import { fetchMovieById } from '../../Api/HomeMovies';
 import './MovieDetailsPage.css';
 import Navbar from '../../Component/Navbar/Navbar';
-import { Col, Flex, Input, Row } from "antd";
+import { Col, Row, Spin} from "antd";
 import { getShowsByMovieId } from '../../Api/Shows';
 
 
 
 function MovieDetailsPage(){
+
+    const contentStyle = {
+        padding: 50,
+        background: 'rgba(255, 255, 255, 0.05)',
+        borderRadius: 4,
+    };
+    const content = <div style={contentStyle} />;
+
     const navigate = useNavigate();
 
 
@@ -59,7 +67,11 @@ function MovieDetailsPage(){
     return <div>
         <Navbar/>
         {
-            movie === null && <div className='loadingDetails'><h2>Fetching Movie Details...</h2></div>
+            movie === null && <div className='loadingDetails'><h2>Fetching Movie Details...
+                <Spin tip="Loading" size="large">
+                    {content}
+                </Spin></h2>
+            </div>
         }
         
         { 
@@ -101,7 +113,11 @@ function MovieDetailsPage(){
         }
 
         {
-            shows === null && <div className='loaderShows'><h2>Fetching Shows...</h2></div>
+            shows === null && <div className='loaderShows'>
+                <Spin tip="Loading" size="small">
+                    {content}
+                </Spin>
+            </div>
         }
         <div className='TheaterAndShowSection'>
             {

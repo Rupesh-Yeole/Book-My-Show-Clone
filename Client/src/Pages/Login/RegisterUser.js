@@ -1,7 +1,7 @@
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Flex, Form, Input, message} from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import logoBookMyShow from "../../Assets/Bookmyshow-logoid.png";
+import FlickBook from "../../Assets/FlickBook.png";
 import './Login.css'
 import { registerUser } from '../../Api/Authentication.js';
 import BeforeLogInNavbar from '../../Component/BeforeLogInNavbar/BeforeLoggedInNavbar.js';
@@ -32,7 +32,7 @@ function RegisterUser(){
             <main>
                 <section className='sectionHeading'>
                     <h2 className="login-heading">Register In
-                        <span className="logo-text"><img className="inline-logo" src={logoBookMyShow} alt="BookMyShow Logo" /></span>
+                        <span className="logo-text"><img className="inline-logo" src={FlickBook} alt="FlickBook Logo" /></span>
                     </h2>
                 </section>
                 <section >
