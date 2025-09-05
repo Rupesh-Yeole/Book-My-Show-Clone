@@ -12,7 +12,9 @@ function Navbar(){
 
     return <div className="navbar">
             <div className="navbar-left">
+                <Link to="/homeMovies">
                 <img className="logo" src={FlickBook} alt="FlickBook Logo" />
+                </Link>
             </div>
             
             

@@ -31,9 +31,12 @@ function Navbar({searchValue, setSearchValue}){
                 />
             </div>
             <div className="navbar-right">
-                <nav className="nav-links">
-                <Link to="/registerUser">Register In</Link>
-                </nav>
+                <div className="registerUser">
+                    <nav className="nav-links">
+                    <Link to="/registerUser" >Register In</Link>
+                    </nav>
+                </div>
+                
                 <button onClick={logout} className="login-btn">
                     Logout
                 </button>

@@ -12,11 +12,11 @@ function Navbar(){
             
             <div className="navbar-right">
                 <nav className="nav-links">
-                <Link to="/registerUser">Register In</Link>
+                    <Link to="/registerUser">Register In</Link>
                 </nav>
                 <Link to="/">
                     <button className="login-btn">
-                    Sign In
+                        Sign In
                     </button>
                 </Link>
             </div>
